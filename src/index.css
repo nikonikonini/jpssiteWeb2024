@@ -1,0 +1,34 @@
+::-webkit-scrollbar {
+    display: none; 
+  }
+
+* { 
+     font-family: "Montserrat", sans-serif;
+}
+
+
+.slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease; 
+  }
+  
+  .slide.active {
+    display: block;
+    opacity: 1;
+  }
+  
+
+ 
+#card-container {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+.snap-start {
+    scroll-snap-align: start;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

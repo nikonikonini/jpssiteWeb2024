@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPSSITE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- NAVIGATION -->
+    <header class="h-[80px] bg-[#33388C] text-white shadow-md fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+
+            <div class="flex space-x-[4px] items-center">
+                <img class="w-[45px]" src="src/images/jpssite_logo.svg" alt="jpssite">
+                <h1 class="text-[25px] font-bold tracking-widest">JPSSITE</h1>
+                <p class="text-[10px] md:text-[0px]  lg:text-[10px] leading-tight">
+                    Junior Philippine Student Society for
+                    <br> Information Technology
+                    Education
+                </p>
+            </div>
+
+            <button id="menu-btn" class="block md:hidden text-white text-2xl">
+                <i id="menu-icon" class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav id="menu"
+                class="hidden md:flex absolute md:static top-[80px] left-0 bg-[#232323] md:bg-transparent w-full md:w-auto">
+                <ul
+                    class="flex flex-row space-x-6 p-4 md:p-0 items-center justify-center text-[14px] sm:text-[16px] md:text-[16px]">
+                    <li><a href="#" class="hover:text-gray-300 py-2">Home</a></li>
+                    <li><a href="#about" class="hover:text-gray-300 py-2">About Us</a></li>
+                    <li><a href="#officers" class="hover:text-gray-300 py-2">Officers</a></li>
+                    <li><a href="#events" class="hover:text-gray-300 py-2">Events</a></li>
+                    <li><a href="#gallery" class="hover:text-gray-300 py-2">Gallery</a></li>
+                    <li><a href="#join" class="hover:text-gray-300 py-2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--button -->
+    <button
+        class="next-btn z-10 mr-2 absolute top-1/2 right-2 transform -translate-y-1/2 py-1 px-3 cursor-pointer  rounded-full"
+        style="background:rgba(55, 55, 55, .6)">
+        <i class="fa-solid fa-chevron-right text-[#f3f3f3] text-xl"></i>
+    </button>
+
+    <button
+        class="prev-btn z-10 ml-2 absolute top-1/2 left-2 transform -translate-y-1/2  py-1 px-3 cursor-pointer rounded-full"
+        style="background:rgba(55, 55, 55, .6)">
+        <i class="fa-solid fa-chevron-left text-[#f3f3f3] text-xl"></i>
+    </button>
+
+
+
+    <!-- slider -->
+
+    <div class="slider mt-[80px] relative">
+        <!-- Slide  -->
+        <div class="slide active relative">
+            <img src="src/images/slide_1.svg" alt="JPSSITE Slide 1" class="w-full h-[570px] object-cover">
+            <div class="absolute inset-0 flex flex-col items-start justify-center text-white"
+                style="background: linear-gradient(to bottom, rgba(36, 36, 36, 0.5), rgba(51, 56, 140, 0.6));">
+                <h1
+                    class="mx-[70px] lg:mx-0  md:ml-[100px] lg:ml-[200px] mt-[200px] text-[30px]  md:text-4xl font-bold text-left leading-tight">
+                    JPSSITE</h1>
+                <p
+                    class="mx-[70px] lg:mx-0 md:ml-[100px] lg:ml-[200px] text-[18px] md:text-[20px] mt-[2px] font-semibold text-left leading-tight">
+                    Junior
+                    Philippine Student Society for Information Technology Education</p>
+                <p
+                    class="mx-[70px] lg:mx-0 md:ml-[100px] lg:ml-[200px] text-[16px] md:text-[18px] mt-[4px] text-left leading-tight">
+                    La
+                    Consolacion
+                    University Philippines</p>
+                <a href="#join"
+                    class="text-[16px] font-semibold mx-[70px] lg:mx-0 md:ml-[100px] lg:ml-[200px] mt-4 bg-[#272b6d] hover:bg-[#33388b] text-[#f3f3f3] py-[10px] px-[30px] rounded-lg transition">
+                    Join Us!
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide  -->
+        <div class="slide active relative">
+            <img src="src/images/slide_2.svg" alt="JPSSITE Slide 1" class="w-full h-[570px] object-cover">
+            <div class="absolute inset-0 flex flex-col items-start justify-center text-white"
+                style="background: linear-gradient(to bottom, rgba(36, 36, 36, 0.5), rgba(51, 56, 140, 0.6));">
+
+                <h1
+                    class="mx-[70px] lg:mx-0  md:ml-[100px] lg:ml-[200px] mt-[200px] text-[30px]  md:text-4xl font-bold text-left leading-tight">
+                    JPSSITE</h1>
+                <p
+                    class="mx-[70px] lg:mx-0 md:ml-[100px] lg:ml-[200px] text-[18px] md:text-[20px] mt-[2px] font-semibold text-left leading-tight">
+                    Innovating Through Technology and Collaboration
+                <p
+                    class="mx-[70px] lg:mx-0 md:ml-[100px] lg:ml-[200px] text-[16px] md:text-[18px] mt-[4px] text-left leading-tight">
+
+                    Join the Vibrant IT Community</p>
+                <a href="#join"
+                    class="text-[16px] font-semibold mx-[70px] lg:mx-0 md:ml-[100px] lg:ml-[200px] mt-4 bg-[#272b6d] hover:bg-[#33388b] text-[#f3f3f3] py-[10px] px-[30px] rounded-lg transition">
+                    Join Us!
+                </a>
+
+            </div>
+        </div>
+
+
+        <!-- Slide  -->
+        <div class="slide active relative">
+            <img src="src/images/slide_3.svg" alt="JPSSITE Slide 1" class="w-full h-[570px] object-cover">
+            <div class="absolute inset-0 flex flex-col items-start justify-center text-white"
+                style="background: linear-gradient(to bottom, rgba(36, 36, 36, 0.5), rgba(51, 56, 140, 0.6));">
+                <h1
+                    class="mx-[70px] lg:mx-0  md:ml-[100px] lg:ml-[200px] mt-[200px] text-[30px]  md:text-4xl font-bold text-left leading-tight">
+                    JPSSITE</h1>
+                <p
+                    class="mx-[70px] lg:mx-0 md:ml-[100px] lg:ml-[200px] text-[18px] md:text-[20px] mt-[2px] font-semibold text-left leading-tight">
+                    Empowering Future IT Leaders
+                <p
+                    class="mx-[70px] lg:mx-0 md:ml-[100px] lg:ml-[200px] text-[16px] md:text-[18px] mt-[4px] text-left leading-tight">
+
+                    Join the Vibrant IT Community</p>
+                <a href="#join"
+                    class="text-[16px] font-semibold mx-[70px] lg:mx-0 md:ml-[100px] lg:ml-[200px] mt-4 bg-[#272b6d] hover:bg-[#33388b] text-[#f3f3f3] py-[10px] px-[30px] rounded-lg transition">
+                    Join Us!
+                </a>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- WHO WE ARE -->
+    <section id="about" class="bg-[#232323] py-10">
+        <div class="container mx-auto text-center">
+            <p class="text-[#f3f3f3] text-[14px] sm:text-[16px] leading-relaxed px-4 md:px-20">
+                We are the Junior Philippine Society for Information Technology Education (JPSSITE) of La Consolacion
+                University Philippines, united by our passion for IT and commitment to academic excellence, professional
+                growth, and collaboration. We aim to enhance knowledge, support each other’s journeys, and promote the
+                responsible use of technology. Through our collective efforts, we uphold the highest standards of
+                computer education and strive to positively impact our university and community.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- OFFICERS SECTION -->
+    <section id="officers" class="bg-[#dddcdc] pt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-[22px] font-bold text-[#232323] mb-8">
+                OFFICERS AND MODERATOR </p>
+
+            <!--  Officers -->
+            <div
+                class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-6 mb-10 mx-[20px] lg:mx-[10px] ">
+
+
+
+                <!-- Officer  -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_1.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-2">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Machete, Ruel</p>
+                    <p class="text-[#232323] text-[14px]">
+                        President</p>
+                </div>
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_2.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-2">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        De Belen, Darren</p>
+                    <p class="text-[#232323] text-[14px]">
+                        Vice President Internal</p>
+                </div>
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_3.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-2">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Cosay, Shane Anne</p>
+                    <p class="text-[#232323] text-[14px]">
+                        Vice President External</p>
+                </div>
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_4.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-2">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Pangan, Jeferson</p>
+                    <p class="text-[#232323] text-[14px]">
+                        Secretary</p>
+                </div>
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_5.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-3">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Yamabao, Redzi Mar</p>
+                    <p class="text-[#232323] text-[14px]">
+                        Assistant Secretary</p>
+                </div>
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_6.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-3">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Zamora, Christelle</p>
+                    <p class="text-[#232323] text-[14px]">
+                        VP for FInance</p>
+                </div>
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_7.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-3">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Santiago, Alessandra Nicole</p>
+                    <p class="text-[#232323] text-[14px]">
+                        VP for Audit</p>
+                </div>
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_8.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-3">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Beloro, Sophia Rhyzelle</p>
+                    <p class="text-[#232323] text-[14px]">
+                        VP for Marketing</p>
+                </div>
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_9.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-3">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Santos, Joseph Lawrence</p>
+                    <p class="text-[#232323] text-[14px]">
+                        VP for Event Management</p>
+                </div>
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_10.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-3">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Santiago, Roseshyne</p>
+                    <p class="text-[#232323] text-[14px]">
+                        Creative Director</p>
+                </div>
+
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_11.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-3">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Orallo, John Carlo</p>
+                    <p class="text-[#232323] text-[14px]">
+                        Technical Director</p>
+                </div>
+
+
+                <!-- Officer -->
+                <div class="flex flex-col items-center">
+                    <img src="src/images/officer_12.svg" alt=""
+                        class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-3">
+                    <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                        Laurenaria, Jessa</p>
+                    <p class="text-[#232323] text-[14px]">
+                        Public Relations Officer</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- moderator -->
+        <div class="mt-10 flex flex-col items-center">
+            <img src="src/images/moderator.svg" alt=""
+                class="w-[90px] sm:w-[120px] h-[90px] sm:h-[120px] rounded-full object-cover mb-2">
+            <p class="text-[#232323] font-bold text-[14px] sm:text-[16px]">
+                Prof. Edna F. Dayao, MSIT</p>
+            <p class="text-[#232323] text-[14px]">
+                Moderator</p>
+        </div>
+    </section>
+
+
+
+    <!--PRINCIPLES AND GOALS -->
+    <section id="about" class="bg-[#dddcdc] py-10">
+        <div class="container mx-auto text-left px-[20px] md:px-[40px]">
+            <p class="text-[22px] font-bold mb-4 text-[#232323]">PRINCIPLES AND GOALS</p>
+            <p class="text-[14px] sm:text-[16px] leading-relaxed ">1. To provide members with practical experiences that
+                enrich their
+                academic knowledge and skills.
+                <br> 2. To effectively prepare each student for their future roles as competent and competitive
+                information technology professionals.
+                <br> 3. To enhance awareness and promote the effective utilization of information and communications
+                technology among students and enthusiasts.
+                <br> 4. To cultivate a commitment to advanced standards of computer education within educational
+                institutions.
+                <br> 5. To establish a platform for knowledge exchange among members, thereby advancing and improving
+                ICT practices nationwide.
+                <br> 6. To foster collaboration and engagement among members while encouraging partnerships with other
+                relevant organizations.
+                <br> 7 .To disseminate knowledge and information through a variety of organizational events and
+                gatherings.
+                <br> 8. To support students in developing critical thinking and problem-solving skills through
+                practical, hands-on activities.
+                <br> 9. To provide mentorship and guidance from experienced professionals in the field of information
+                technology.
+                10. To encourage continuous professional development among members through workshops, seminars, and
+                training sessions.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!--EVENT-->
+    <section id="events" class="bg-[#f3f3f3] py-10">
+        <div class="flex justify-center">
+            <p class="text-[22px] font-bold mb-4 text-[#232323]">EVENTS</p>
+        </div>
+
+        <div class="relative w-full px-[40px] md:px-[60px] max-w-full mx-auto">
+            <!-- button -->
+            <button id="slideLeft"
+                class="absolute top-1/2 left-3 transform -translate-y-1/2 bg-[#0c0c0c2c] text-[#333] py-1 px-3 rounded-full shadow-md hover:bg-[#2727278c] z-10">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <!-- Container -->
+            <div id="card-container"
+                class="flex space-x-4 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+
+                <!-- Card  -->
+                <div class="relative group min-w-[200px] md:min-w-[250px] snap-start">
+                    <img src="src/images/event_1.svg" alt="Event 1" class="w-full h-[260px] object-cover rounded-lg">
+                    <div
+                        class="absolute inset-0 group-hover:opacity-100 group-hover:bg-gradient-to-b group-hover:from-[#2c2c2c62] group-hover:to-[#33388C99] opacity-0 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-4">
+                        <h3 class="text-[#f3f3f3] text-[16px] font-semibold mb-2">
+                            Tulong Dunong ni Venerable Consuelo!</h3>
+                        <a href="#"
+                            class="bg-[#f3f3f3] text-[#232323] font-semibold text-[14px] py-2 px-4 rounded hover:bg-[#232323] hover:text-[#f3f3f3] transition duration-200">
+                            View Details</a>
+                    </div>
+                </div>
+
+
+                <!-- Card  -->
+                <div class="relative group min-w-[200px] md:min-w-[250px] snap-start">
+                    <img src="src/images/event_2.svg" alt="Event 1" class="w-full h-[260px] object-cover rounded-lg">
+                    <div
+                        class="absolute inset-0 group-hover:opacity-100 group-hover:bg-gradient-to-b group-hover:from-[#2c2c2c62] group-hover:to-[#33388C99] opacity-0 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-4">
+                        <h3 class="text-[#f3f3f3] text-[16px] font-semibold mb-2">
+                            JPSSITE Christmas Caroling</h3>
+                        <a href="#"
+                            class="bg-[#f3f3f3] text-[#232323] font-semibold text-[14px] py-2 px-4 rounded hover:bg-[#232323] hover:text-[#f3f3f3] transition duration-200">
+                            View Details</a>
+                    </div>
+                </div>
+
+
+                <!-- Card  -->
+                <div class="relative group min-w-[200px] md:min-w-[250px] snap-start">
+                    <img src="src/images/event_3.svg" alt="Event 1" class="w-full h-[260px] object-cover rounded-lg">
+                    <div
+                        class="absolute inset-0 group-hover:opacity-100 group-hover:bg-gradient-to-b group-hover:from-[#2c2c2c62] group-hover:to-[#33388C99] opacity-0 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-4">
+                        <h3 class="text-[#f3f3f3] text-[16px] font-semibold mb-2">
+                            JPSSITE Booths</h3>
+                        <a href="#"
+                            class="bg-[#f3f3f3] text-[#232323] font-semibold text-[14px] py-2 px-4 rounded hover:bg-[#232323] hover:text-[#f3f3f3] transition duration-200">
+                            View Details</a>
+                    </div>
+                </div>
+
+
+                <!-- Card  -->
+                <div class="relative group min-w-[200px] md:min-w-[250px] snap-start">
+                    <img src="src/images/event_4.svg" alt="Event 1" class="w-full h-[260px] object-cover rounded-lg">
+                    <div
+                        class="absolute inset-0 group-hover:opacity-100 group-hover:bg-gradient-to-b group-hover:from-[#2c2c2c62] group-hover:to-[#33388C99] opacity-0 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-4">
+                        <h3 class="text-[#f3f3f3] text-[16px] font-semibold mb-2">
+                            JPSSITE Pace Level Up Version 5.1</h3>
+                        <a href="#"
+                            class="bg-[#f3f3f3] text-[#232323] font-semibold text-[14px] py-2 px-4 rounded hover:bg-[#232323] hover:text-[#f3f3f3] transition duration-200">
+                            View Details</a>
+                    </div>
+                </div>
+
+                <!-- Card  -->
+                <div class="relative group min-w-[200px] md:min-w-[250px] snap-start">
+                    <img src="src/images/event_5.svg" alt="Event 1" class="w-full h-[260px] object-cover rounded-lg">
+                    <div
+                        class="absolute inset-0 group-hover:opacity-100 group-hover:bg-gradient-to-b group-hover:from-[#2c2c2c62] group-hover:to-[#33388C99] opacity-0 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-4">
+                        <h3 class="text-[#f3f3f3] text-[16px] font-semibold mb-2 leading-tight">
+                            JPSSITE Pace Level Up Version 5.0</h3>
+                        <a href="#"
+                            class="bg-[#f3f3f3] text-[#232323] font-semibold text-[14px] py-2 px-4 rounded hover:bg-[#232323] hover:text-[#f3f3f3] transition duration-200">
+                            View Details</a>
+                    </div>
+                </div>
+
+                <!--Card -->
+                <div class="relative group min-w-[200px] md:min-w-[250px] snap-start">
+                    <img src="src/images/event_6.svg" alt="Event 1" class="w-full h-[260px] object-cover rounded-lg">
+                    <div
+                        class="absolute inset-0 group-hover:opacity-100 group-hover:bg-gradient-to-b group-hover:from-[#2c2c2c62] group-hover:to-[#33388C99] opacity-0 transition-opacity duration-300 rounded-lg flex flex-col justify-end p-4">
+                        <h3 class="text-[#f3f3f3] text-[16px] font-semibold mb-2">
+                            Regional Assembly on Information Technology Education (RAITE)</h3>
+                        <a href="#"
+                            class="bg-[#f3f3f3] text-[#232323] font-semibold text-[14px] py-2 px-4 rounded hover:bg-[#232323] hover:text-[#f3f3f3] transition duration-200">
+                            View Details</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- button -->
+            <button id="slideRight"
+                class="absolute top-1/2 right-3 transform -translate-y-1/2 bg-[#0c0c0c2c] text-[#333] py-1 px-3 rounded-full shadow-md hover:bg-[#2727278c] z-10">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+
+            <!-- dot -->
+            <div id="indicator-container" class="flex justify-center mt-3 space-x-1">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="bg-[#dddcdc] py-10">
+        <div class="container mx-auto text-center px-[20px] md:px-[40px]">
+            <p class="text-[22px] font-bold mb-6 text-[#232323]">GALLERY</p>
+        </div>
+
+        <div class="relative w-full max-w-7xl mx-auto">
+
+            <div id="gallery-container"
+                class=" mx-[40px] lg:mx-[15px] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-4">
+
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg"
+                    style="background-image: url('src/images/gallery/pic1.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg"
+                    style="background-image: url('src/images/gallery/pic2.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg"
+                    style="background-image: url('src/images/gallery/pic3.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg"
+                    style="background-image: url('src/images/gallery/pic4.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg"
+                    style="background-image: url('src/images/gallery/pic5.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg"
+                    style="background-image: url('src/images/gallery/pic6.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg"
+                    style="background-image: url('src/images/gallery/pic7.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg"
+                    style="background-image: url('src/images/gallery/pic8.jpg');"></div>
+
+                <!-- hidden photo -->
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg hidden"
+                    style="background-image: url('src/images/gallery/pic9.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg hidden"
+                    style="background-image: url('src/images/gallery/pic10.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg hidden "
+                    style="background-image: url('src/images/gallery/pic11.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg hidden"
+                    style="background-image: url('src/images/gallery/pic12.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg hidden"
+                    style="background-image: url('src/images/gallery/pic13.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg hidden"
+                    style="background-image: url('src/images/gallery/pic14.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg hidden"
+                    style="background-image: url('src/images/gallery/pic15.jpg');"></div>
+                <div class="min-w-[120px] sm:min-w-[250px] h-[150px] sm:h-[230px] bg-cover bg-center rounded-lg hidden"
+                    style="background-image: url('src/images/gallery/pic16.jpg');"></div>
+            </div>
+
+            <!-- button -->
+            <div class="flex justify-center mt-6">
+                <button id="see-more-btn"
+                    class="bg-[#33388C] text-[#f3f3f3] px-6 py-2 rounded-full hover:bg-[#222561] transition">
+                    See More
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--JOIN US-->
+    <section id="join" class="bg-[#232323] py-10">
+        <div class="container mx-auto text-left px-[20px] md:px-[30px]">
+            <p class="text-[22px] font-bold mb-6 text-[#F3F3F3]">JOIN US</p>
+        </div>
+
+        <div class="container mx-auto px-[20px] lg:px-[40px]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-0">
+               
+                <div>
+                    <h2 class="text-[16px] sm:text-[18px] font-bold text-[#f3f3f3] mb-4">
+                        Why Join JPSSITE?</h2>
+                    <ul class=" text-[14px]  sm:text-[16px] space-y-1 text-[#f3f3f3] list-disc list-inside">
+                        <li>Enhance your technical and leadership skills.</li>
+                        <li>Get access to exclusive events and industry connections.</li>
+                        <li>Be part of a vibrant IT community.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-[16px] sm:text-[18px] font-bold text-[#f3f3f3] mb-4">
+                        How to Join</h2>
+                    <ul class="text-[14px] sm:text-[16px] space-y-1 text-[#f3f3f3] list-disc list-inside">
+                        <li>
+                            Fill out the membership form:
+                            <a href="#" class="text-blue-600 hover:underline">Click here</a>.
+                        </li>
+                        <li>Attend the orientation meeting.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#33388C] text-white py-6">
+        <div class="container mx-auto ">
+            <div class="flex flex-col-reverse sm:flex-row items-center justify-between">
+                
+                <div class="pl-[20px] md:w-1/2 text-center sm:text-left">
+                    <p class="text-[#f3f3f3] text-[12px] sm:text-[14px] ">
+                        <i class="fa-brands fa-google"></i>
+                        lcup.jpssite@gmail.com
+                    </p>
+                    <p class="text-[#f3f3f3] text-[12px] sm:text-[14px] ">
+                        <i class="fa-brands fa-facebook"></i>
+                        https://www.facebook.com/jpssite.lcup19
+                    </p>
+                    <p class="mt-1 text-[#f3f3f3] text-[12px] sm:text-[14px] ">
+                        La Consolacion University Philippines</p>
+                </div>
+
+                
+                <div class="mr-[5px] flex justify-center  md:mb-0">
+                    <img src="src/images/3logo.svg" alt="Logo" class="w-[150px] sm:w-[180px] h-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="src/script.js"></script>
+
+</body>
+
+</html>
